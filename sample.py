@@ -1,4 +1,4 @@
-from OpenCV import cv2
+from cv2 import cv2
 import PIL
 
 import streamlit as st
