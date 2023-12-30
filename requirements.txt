@@ -1,5 +1,5 @@
 ultralytics
 torch
 streamlit
-opencv-python
-
+numpy
+opencv-python-headless
