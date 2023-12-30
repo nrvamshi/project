@@ -2,4 +2,4 @@ ultralytics
 torch
 streamlit
 opencv-python
-OpenCV
+
