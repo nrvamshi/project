@@ -1,3 +1,4 @@
+import cv2
 import PIL
 
 import streamlit as st
