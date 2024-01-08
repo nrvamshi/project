@@ -3,6 +3,21 @@ import PIL
 import streamlit as st
 from ultralytics import YOLO
 
+import subprocess
+
+def install_opengl_libraries():
+    try:
+        subprocess.run(["sudo", "apt-get", "update"], check=True)
+        subprocess.run(["sudo", "apt-get", "install", "libgl1-mesa-glx"], check=True)
+        print("OpenGL libraries installed successfully.")
+    except subprocess.CalledProcessError as e:
+        print(f"Error occurred: {e}")
+        # Handle error cases here
+
+# Call the function to install OpenGL libraries
+install_opengl_libraries()
+
+
 # Replace the relative path to your weight file
 model_path = './best.pt'
 
