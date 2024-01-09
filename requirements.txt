@@ -3,3 +3,4 @@ torch
 streamlit
 numpy
 opencv-python-headless
+opencv-python
